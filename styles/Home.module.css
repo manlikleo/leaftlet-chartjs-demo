@@ -1,0 +1,147 @@
+.container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main {
+  width: 100%;
+  padding:0;
+  flex: 1;
+  display: flex;
+  flex-direction: column
+}
+
+.header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+  height:6vh;
+  background-color:#000;
+  position:sticky;
+  top: 0;
+  z-index:3;
+
+
+}
+
+.appcontainer{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+}
+.apptitle{
+  margin-bottom: 1.5rem;
+}
+
+.cardwrapper{
+  margin-top: 2rem;
+  display: flex;
+  width: 80%;
+  justify-content:space-evenly;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.cardcontainer{
+  width:32%;
+  margin:1rem 0;
+  display:flex;
+  flex-direction: column;
+  padding: 0.5rem 1.2rem;
+  background-color: #000;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  max-height: 220px;
+  height:220px;
+  transition: 1s ease-in-out;
+  -webkit-transition: 1s ease-in-out;
+  -moz-transition: 1s ease-in-out;
+  -ms-transition: 1s ease-in-out;
+  -o-transition: 1s ease-in-out;
+  justify-content: space-evenly;
+}
+
+.cardcontainer:hover{
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
+  transform:translateY(-10px);
+  -webkit-transform:translateY(-10px);
+  -moz-transform:translateY(-10px);
+  -ms-transform:translateY(-10px);
+  -o-transform:translateY(-10px);
+}
+
+.cardcontent{
+  display:flex;
+  text-align:center;
+  align-items:center;
+  justify-content:space-between;
+}
+
+.countryinfo{
+  text-align:center;
+  font-weight: 600;
+  font-size:16px;
+}
+
+.countrycontent{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+}
+.cardpic{
+  max-width:100px;
+  max-height:100px;
+}
+.cardpic img{
+  width:100%;
+  object-fit:contain;
+}
+
+.texcont{
+  display: flex;
+  flex-direction: column;
+}
+
+.textinfo{
+  font-size:.8rem;
+}
+.numberinfo{
+  font-weight:600;
+}
+
+@media only screen and (max-width:968px){
+
+  .cardcontainer{
+    width:46%;
+  }
+  .cardwrapper{
+    width:90%;
+  }
+
+
+}
+
+@media only screen and (max-width:550px){
+  .apptitle{
+    text-align:center;
+    font-size:.9rem;
+  }
+  .header p {
+    font-size:12px;
+  }
+  .cardcontainer{
+    width:100%;
+  }
+  .cardwrapper{
+    width:90%;
+  }
+}

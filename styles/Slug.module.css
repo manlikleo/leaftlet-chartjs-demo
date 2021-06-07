@@ -1,0 +1,181 @@
+.slugwrapper{
+    width:100%;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+}
+
+.slugcontainer{
+    width:80%;
+    padding:1rem 0;
+}
+
+.bannercontainer{
+    display: flex;
+    align-items:center;
+}
+
+.banner{
+    max-width: 40%;
+    max-height: 300px;
+    margin-right: 2rem;
+}
+
+.banner img{
+    width:100%;
+    object-fit: cover;
+}
+
+.btncontainer{
+    max-width: 16px;
+    max-height: 16px;
+    margin-right: 1rem;
+}
+
+.btncontainer img{
+    width:100%;
+    object-fit: contain;
+    
+}
+
+.btnwrapper{
+    margin-top:1.5rem;
+    width:80%;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    padding:.5rem 1.2rem;
+    background: #fff;
+    color: #000;
+}
+
+.infosection{
+    margin-top: 2rem;
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    flex-wrap: wrap;
+}
+
+.mapsection{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    background-color:#fff;
+    border-radius:10px;
+    -webkit-border-radius:10px;
+    -moz-border-radius:10px;
+    -ms-border-radius:10px;
+    -o-border-radius:10px;
+}
+.map{
+    border-radius:10px 10px 0px 0px;
+    width: 100%;
+    background-color:#000;
+    height:300px;
+    -webkit-border-radius:10px 10px 0px 0px;
+    -moz-border-radius:10px 10px 0px 0px;
+    -ms-border-radius:10px 10px 0px 0px;
+    -o-border-radius:10px 10px 0px 0px;
+}
+
+.mapinformation{
+    display: flex;
+    justify-content:space-around;
+    /* align-items: center; */
+}
+
+.cases{
+    display: flex;
+    flex-direction: column;
+    align-items:left;
+}
+
+.data{
+    margin-bottom: 1rem;
+    color: #000;
+}
+
+.graphsection{
+    padding:1rem;
+    width: 45%;
+    background-color:#fff;
+    height:434px;
+    border-radius:10px;
+    -webkit-border-radius:10px;
+    -moz-border-radius:10px;
+    -ms-border-radius:10px;
+    -o-border-radius:10px;
+}
+
+.chart{
+    color: #000;
+}
+
+
+@media only screen and (max-width:968px){
+
+    .slugcontainer{
+        width:95%;
+    }
+    
+    .mapinformation{
+        padding:8px;
+    }
+
+    .graphsection{
+        width:47%;
+    }
+    .mapsection{
+        width:47%;
+    }
+  
+}
+
+@media only screen and (max-width:550px){
+
+    .slugcontainer{
+        width:95%;
+    }
+
+    .bannercontainer{
+        flex-direction: column;
+    }
+
+    .banner{
+        margin:0;
+        max-width: 70%;
+    }
+
+    .mapsection{
+        width:95%;
+        margin-bottom: 1.4rem;
+    }
+
+    .infosection{
+        justify-content: center;
+        align-items:center;
+    }
+    .graphsection{
+        width:95%;
+    }
+
+    .mapinformation{
+        align-items:center;
+    }
+    .cases span{
+        font-size: .75rem;
+    }
+    .bannerinfo{
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+
+    }
+
+    .countryname{
+        font-size: 1.5rem;
+    }
+  
+}
